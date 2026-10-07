@@ -6,7 +6,8 @@ import { sites } from "./build/sites-vite-plugin";
 import { connectorPreview } from "./build/connector-preview-plugin.mjs";
 
 const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
-  "00000000-0000-4000-8000-000000000000";
+  process.env.CLOUDFLARE_D1_DATABASE_ID ||
+  "c6847a9f-83df-4f07-874f-6f2763ee6839";
 
 const { d1, r2 } = hostingConfig;
 
