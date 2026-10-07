@@ -1,0 +1,1 @@
+ALTER TABLE `attempts` ADD `interaction` text DEFAULT 'number' NOT NULL;

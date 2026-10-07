@@ -1,0 +1,1 @@
+ALTER TABLE `attempts` ADD `reflection` text DEFAULT '' NOT NULL;
